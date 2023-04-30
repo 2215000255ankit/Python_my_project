@@ -1,0 +1,18 @@
+#guess the number game.
+import random
+c=input("Enter your name: ")
+print("Welcome To The Game",c)
+att=10
+a=random.randint(1,100)
+while att:
+    n=int(input("enter the no.: "))
+    if n>a:
+        print("Too Small")
+    elif n+10>a:
+        print("Greater but close to win")
+    elif n+10<a:
+        print("lesser but close to win ")
+    elif n==a:
+        print("You Won ")
+    else:
+        print("Too Large")
